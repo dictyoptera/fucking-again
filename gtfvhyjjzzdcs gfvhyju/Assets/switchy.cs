@@ -8,7 +8,7 @@ public class switchy : MonoBehaviour
     public GameObject lower;
     public GameObject skybox1;
     public GameObject skybox2;
-
+    public GameObject PlayerLamp;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -16,6 +16,7 @@ public class switchy : MonoBehaviour
         lower.SetActive(true);
         skybox1.SetActive(false);
         skybox2.SetActive(true);
+        PlayerLamp.SetActive(true);
         Debug.Log("An object entered.");
     }
 }
